@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SportsQuip</title>
+
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Bootstrap Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+	<!-- Favicons -->
+	<link rel="icon" href="Assets/favicons/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="products.css">
+
+</head>
+<body onload="productsPage()" class ="x">
+
+	<header>
+
+		<!-- Navigation Bar -->
+		<div class="container-fluid">
+			
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container">
+					<a class="navbar-brand" href="index.html">SportsQuip</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+      					<span class="navbar-toggler-icon"></span>
+				    </button>
+				    <div class="collapse navbar-collapse" id="navbar-content">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item ps-3">
+								<a href="index.html" class="nav-link">Home</a>
+							</li>
+							<li class="nav-item dropdown ps-3">
+			          			<a class="nav-link active dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+					            List
+					         	</a>
+					         <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+					            <li><h3 class="dropdown-header">Athletics</h3></li>
+					            <li><a onclick="loadProductsPages('C2')" class="dropdown-item" href="#">Cases</a></li>
+					            <li><a onclick="loadProductsPages('C1')" class="dropdown-item" href="#">Prohibited Cases</a></li>
+					            <!-- <li><a onclick="loadProductsPages('C3')" class="dropdown-item" href="#">Allowed Cases</a></li> -->
+					            <li><hr class="dropdown-divider"></li>
+					            <li><h3 class="dropdown-header">Football</h3></li>
+					            <li><a onclick="loadProductsPages('F2')" class="dropdown-item" href="#">Cases</a></li>
+					            <li><a onclick="loadProductsPages('F1')" class="dropdown-item" href="products.html">Prohibited Drugs</a></li>
+					        </ul>
+					        </li>
+							<li class="nav-item ps-2">
+								<a href="index.html#forms" class="nav-link">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</nav>
+		</div>
+		
+	</header>
+
+	<main>	
+		<div class="container-lg">
+	        <h1 class="title">Prohibited Drugs</h1>
+
+	        <div class="row">
+	            <div class="col-lg-4 col-md-6">
+	                <div class="product-card">
+	                    <div class="img-background">
+	                        <img class="img-fluid img-width" src="Assets/football_boots/Adidas_Ghosted/3.jpeg">
+	                    </div>
+	                    <div class="product">
+		                    <div class="product-name">Cannabis</div>
+		                    <!-- <i class="far fa-heart"  onclick="changeHeart(0)"></i> -->
+	                    </div>
+	                    <div class="product-desc">Cannabis use appears to be at its highest in the NFL, with one-time Dallas Cowboys tight end Martellus Bennett claiming that nearly 90 percent of professional football players rely on it, mostly to manage pain, instead of dabbling in opioids that can lead to serious side effects and addiction.</div>
+						<div class="product-desc">In a 2019 study published in the journal PLOS One, 26 percent of 1,161 self-identified athletes, mostly runners, cyclists and triathletes, reported that they were current users of cannabis. Some smoked it, while others consumed it as edibles or rubbed it on their bodies as creams</div>
+	                    <div class="btns">
+		                    <!-- <button onclick="toggleButton('1')" class="btn-product-card-outline">Toggle</button> -->
+		                    <!-- <button onclick="loadCustomPage('1')" class="btn-product-card">Customise</button> -->
+		                </div>
+	                </div>
+	            </div>
+	            <div class="col-lg-4 col-md-6">
+	                <div class="product-card">
+	                    <div class="img-background">
+	                        <img class="img-fluid img-width" src="Assets/football_boots/Adidas_Predator/2.png">
+	                    </div>
+	                    <div class="product">
+		                    <div class="product-name">Pseudoephedrine</div>
+		                    <!-- <i class="far fa-heart"  onclick="changeHeart(1)"></i> -->
+	                    </div>
+	                    <div class="product-desc">Pseudoephedrine (PSE), a sympathomimetic drug, commonly used in nasal decongestants, is currently banned in sports by the World Anti-Doping Agency (WADA), as its stimulant activity is claimed to enhance performance.</div>
+						<div class="product-desc">The results of a doping control concerning PSE conducted in the Department of Anti-Doping Research of Institute of Sport in Warsaw in the years 2001-2003 and 2004-2007 have been compared. Moreover, several dozen of urine samples collected from the patients taking OTC drugs with PSE have been analysed.</div>
+	                    <div class="btns">
+		                    <!-- <button  onclick="toggleButton('2')" class="btn-product-card-outline">Toggle</button> -->
+		                    <!-- <button onclick="loadCustomPage('2')" class="btn-product-card">Customise</button> -->
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-lg-4 col-md-6">
+	                <div class="product-card">
+	                    <div class="img-background">
+	                        <img class="img-fluid img-width" src="Assets/football_boots/Nike_Phantom/1.png">
+	                    </div>
+	                    <div class="product">
+		                    <div class="product-name">Acetaminophen</div>
+		                    <!-- <i class="far fa-heart"  onclick="changeHeart(2)"></i> -->
+	                    </div>
+	                    <div class="product-desc">One hundred and forty-one young subelite athletes (in sprint, cycling, middle distance running and handball) were included in the study, with a control group of 89 high school pupils. Drugs were researched by high performance liquid chromatography using a diode array detector.</div>
+						<div class="product-desc">Several studies explored the effects of paracetamol (acetaminophen) ingestion on endurance performance, but their findings are conflicting. Therefore, this review aimed to conduct a meta-analysis examining the effects of paracetamol ingestion on endurance performance</div>
+	                    <div class="btns">
+		                    <!-- <button  onclick="toggleButton('3')" class="col-6 btn-product-card-outline">Toggle</button> -->
+		                    <!-- <button onclick="loadCustomPage('3')" class="col-6 btn-product-card">Customise</button> -->
+		                </div>
+	                </div>
+	            </div>
+	            <div class="cricket-card col-lg-4 col-md-6">
+	                <div class="product-card">
+	                    <div class="img-background">
+	                        <img class="img-fluid img-width" src="Assets/football_boots/Nike_Superfly/1.png">
+	                    </div>
+	                    <div class="product">
+		                    <div class="product-name">HGH</div>
+		                    <!-- <i class="far fa-heart"  onclick="changeHeart(3)"></i> -->
+	                    </div>
+	                    <div class="product-desc">The human growth hormone (hGH) is a naturally occurring peptide hormone secreted by the pituitary gland.1 Although the hormone in the body is rather heterogeneous, the major component is made up of 191 amino acids, stabilised by two disulphide bonds and reaching a molecular weight of 22 kDa</div>
+						<div class="btns">
+		                    <!-- <button  onclick="toggleButton('4')" class="col-6 btn-product-card-outline">Toggle</button> -->
+		                    <!-- <button onclick="loadCustomPage('4')" class="col-6 btn-product-card">Customise</button> -->
+	                   </div>
+	                </div>
+	            </div>
+	            <div class="cricket-card col-lg-4 col-md-6">
+	                <div class="product-card">
+	                    <div class="img-background">
+	                        <img class="img-fluid img-width" src="Assets/football_boots/Puma_Future/1.png">
+	                    </div>
+	                    <div class="product">
+		                    <div class="product-name">Methamphetamine</div>
+		                    <!-- <i class="far fa-heart"  onclick="changeHeart(4)"></i> -->
+	                    </div>
+	                    <div class="product-desc">Swallowed or snorted (also called bumping) meth give the user an intense high. Injections create a quick but strong intense high, called a rush or a flash.
+
+						People who abuse methamphetamines feel high and full of energy. They think the drug will allow their bodies to keep going and going. But meth is very damaging to the body.</div>
+						<div class="btns">
+		                    <!-- <button  onclick="toggleButton('5')" class="col-6 btn-product-card-outline">Toggle</button> -->
+		                    <!-- <button onclick="loadCustomPage('5')" class="col-6 btn-product-card">Customise</button> -->
+		                </div>
+	                </div>
+	            </div>
+	            <div class="cricket-card col-lg-4 col-md-6">
+	                <div class="product-card">
+	                    <div class="img-background">
+	                        <img class="img-fluid img-width" src="Assets/football_boots/Puma_Ultra/1.png">
+	                    </div>
+	                    <div class="product">
+		                    <div class="product-name">Cocaine</div>
+		                    <!-- <i class="far fa-heart"  onclick="changeHeart(5)"></i> -->
+	                    </div>
+	                    <div class="product-desc">Cocaine is universally banned in both professional and amateur sports primarily to protect the health of the athlete and the reputation of the sport. Regardless of the route of administration, most of the cocaine is metabolized to benzoylecgonine, which is readily detected in the urine. Cocaine is an addictive substance.</div>
+	                    <div class="btns">
+		                    <!-- <button  onclick="toggleButton('6')" class="col-6 btn-product-card-outline">Toggle</button> -->
+		                    <!-- <button onclick="loadCustomPage('6')" class="col-6 btn-product-card">Customise</button> -->
+		                </div>
+	                </div>
+	            </div>
+	        </div>
+		</div>
+	</main>
+	
+	<footer>
+		<!-- Social Icons -->
+		<div class="social-icons">
+			<i class="fa-2x fab fa-facebook-f"></i>
+			<i class="fa-2x fab fa-twitter"></i>
+			<i class="fa-2x fab fa-instagram"></i>
+			<i class="fa-2x fas fa-envelope"></i> 
+		</div>
+		<p>&copy; Copyright 2021 <span>SportsQuip</span></p>
+	</footer>
+
+	<!-- JS Scripts -->
+	<script src="index.js"></script>
+</body>
+</html>
